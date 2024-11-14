@@ -1,3 +1,4 @@
+import { ClientProviders } from "@/utils/ClientProviders";
 import { Container } from "@mui/material";
 import type { Metadata } from "next";
 
@@ -14,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Container maxWidth="md">{children}</Container>
+        <ClientProviders>
+          <Container maxWidth="md">{children}</Container>
+        </ClientProviders>
       </body>
     </html>
   );
