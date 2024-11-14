@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ClientProviders>
-          <Container maxWidth="md">{children}</Container>
+          <Container maxWidth="sm">{children}</Container>
         </ClientProviders>
       </body>
     </html>

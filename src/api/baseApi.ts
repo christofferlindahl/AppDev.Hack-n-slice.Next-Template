@@ -4,4 +4,5 @@ export const baseApi = createApi({
   reducerPath: "baseApi",
   baseQuery: fetchBaseQuery({ baseUrl: "/api" }),
   endpoints: () => ({}),
+  tagTypes: ["Posts"],
 });
